@@ -1,0 +1,1033 @@
+/* =========================================================
+   PREM SEO ENGINE
+   Stage 1 - SEO Auditor
+   Global Styles
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.container {
+    width: 92%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    background: #111827;
+    color: #ffffff;
+    border-bottom: 1px solid #273244;
+}
+
+.header-inner {
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* Brand */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand-icon {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.brand h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.brand p {
+    margin-top: 3px;
+
+    font-size: 12px;
+    color: #aeb8c8;
+}
+
+
+/* Stage Badge */
+
+.stage-badge {
+    padding: 7px 12px;
+
+    border: 1px solid #3a475b;
+    border-radius: 20px;
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main {
+    min-height: calc(100vh - 150px);
+    padding: 55px 0 80px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+
+    color: #111827;
+}
+
+.hero-content h2 span {
+    display: block;
+    color: #2563eb;
+}
+
+.hero-description {
+    max-width: 680px;
+
+    margin: 18px auto 35px;
+
+    font-size: 16px;
+    color: #667085;
+}
+
+
+/* =========================================================
+   AUDIT CARD
+========================================================= */
+
+.audit-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    padding: 30px;
+
+    text-align: left;
+
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.07);
+}
+
+
+/* Card title */
+
+.card-title {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+}
+
+.card-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+.card-title h3 {
+    font-size: 18px;
+    color: #111827;
+}
+
+.card-title p {
+    margin-top: 2px;
+
+    font-size: 13px;
+    color: #667085;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+#auditForm label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #344054;
+}
+
+.url-input-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.url-input-wrapper input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #101828;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.url-input-wrapper input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.url-input-wrapper button {
+    height: 52px;
+
+    padding: 0 24px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.url-input-wrapper button:hover {
+    background: #1d4ed8;
+}
+
+.url-input-wrapper button:active {
+    transform: translateY(1px);
+}
+
+.url-input-wrapper button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.input-help {
+    margin-top: 8px;
+
+    font-size: 12px;
+    color: #98a2b3;
+}
+
+
+/* =========================================================
+   AUDIT STATUS
+========================================================= */
+
+.audit-status {
+    margin-top: 22px;
+
+    padding: 15px 18px;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+.audit-status strong {
+    display: block;
+
+    font-size: 13px;
+    color: #344054;
+}
+
+.audit-status p {
+    margin-top: 2px;
+
+    font-size: 12px;
+    color: #667085;
+}
+
+
+/* Spinner */
+
+.spinner {
+    width: 20px;
+    height: 20px;
+
+    border: 3px solid #dbeafe;
+    border-top-color: #2563eb;
+
+    border-radius: 50%;
+
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   RESULTS SECTION
+========================================================= */
+
+.results-section {
+    margin-top: 60px;
+}
+
+
+/* Section Header */
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    margin-top: 5px;
+
+    font-size: 28px;
+    color: #111827;
+
+    word-break: break-word;
+}
+
+.section-label {
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #2563eb;
+}
+
+
+/* Secondary button */
+
+.secondary-button {
+    padding: 10px 16px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #344054;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   SCORE GRID
+========================================================= */
+
+.score-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+.score-card {
+    min-height: 145px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(17, 24, 39, 0.04);
+}
+
+.main-score-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.score-label {
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #667085;
+}
+
+.overall-score {
+    margin-top: 4px;
+
+    font-size: 46px;
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: #2563eb;
+}
+
+.score-message {
+    margin-top: 8px;
+
+    font-size: 12px;
+    color: #667085;
+}
+
+.category-score {
+    margin-top: 15px;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    color: #111827;
+}
+
+
+/* =========================================================
+   SUMMARY GRID
+========================================================= */
+
+.summary-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.summary-card {
+    min-height: 86px;
+
+    padding: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+.summary-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 9px;
+
+    background: #f8fafc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-card span {
+    display: block;
+
+    font-size: 11px;
+    color: #667085;
+}
+
+.summary-card strong {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 20px;
+    color: #111827;
+}
+
+
+/* =========================================================
+   REPORT CARD
+========================================================= */
+
+.report-card {
+    margin-bottom: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(17, 24, 39, 0.04);
+}
+
+.report-card-header {
+    padding: 22px;
+
+    border-bottom: 1px solid #eaecf0;
+}
+
+.report-card-header h3 {
+    margin-top: 5px;
+
+    font-size: 18px;
+    color: #111827;
+}
+
+
+/* =========================================================
+   PRIORITY LIST
+========================================================= */
+
+.priority-list {
+    padding: 5px 22px 22px;
+}
+
+.priority-item {
+    padding: 17px 0;
+
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.priority-item:last-child {
+    border-bottom: none;
+}
+
+.priority-item-title {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.priority-number {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.priority-item h4 {
+    font-size: 14px;
+    color: #111827;
+}
+
+.priority-item p {
+    margin: 5px 0 0 35px;
+
+    font-size: 12px;
+    color: #667085;
+}
+
+
+/* Empty state */
+
+.empty-state {
+    padding: 35px 10px;
+
+    text-align: center;
+
+    color: #98a2b3;
+}
+
+.empty-state div {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 760px;
+}
+
+thead {
+    background: #f8fafc;
+}
+
+th {
+    padding: 13px 16px;
+
+    text-align: left;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    color: #667085;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+    white-space: nowrap;
+}
+
+td {
+    padding: 14px 16px;
+
+    border-top: 1px solid #eaecf0;
+
+    font-size: 12px;
+
+    color: #344054;
+}
+
+td:first-child {
+    max-width: 280px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* Table status */
+
+.status-good {
+    color: #15803d;
+    font-weight: 700;
+}
+
+.status-warning {
+    color: #b45309;
+    font-weight: 700;
+}
+
+.status-critical {
+    color: #b91c1c;
+    font-weight: 700;
+}
+
+.empty-table {
+    padding: 35px;
+
+    text-align: center;
+
+    color: #98a2b3;
+}
+
+
+/* =========================================================
+   TECHNICAL CHECKS
+========================================================= */
+
+.checks-grid {
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.check-item {
+    padding: 15px;
+
+    border: 1px solid #eaecf0;
+    border-radius: 10px;
+
+    background: #fafafa;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.check-item span {
+    font-size: 12px;
+    color: #475467;
+}
+
+.check-item strong {
+    font-size: 12px;
+    color: #667085;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: #111827;
+
+    color: #ffffff;
+
+    padding: 25px 0;
+}
+
+.footer-inner {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.footer strong {
+    font-size: 14px;
+}
+
+.footer p {
+    margin-top: 3px;
+
+    font-size: 11px;
+    color: #98a2b3;
+}
+
+.footer span {
+    font-size: 11px;
+    color: #98a2b3;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .score-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .summary-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .checks-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .header-inner {
+        min-height: 68px;
+    }
+
+    .brand-icon {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 10px;
+
+        font-size: 18px;
+    }
+
+    .brand h1 {
+        font-size: 17px;
+    }
+
+    .brand p {
+        display: none;
+    }
+
+    .stage-badge {
+        padding: 6px 9px;
+
+        font-size: 10px;
+    }
+
+
+    /* Main */
+
+    .main {
+        padding: 38px 0 60px;
+    }
+
+
+    /* Hero */
+
+    .hero-content h2 {
+        font-size: 30px;
+
+        letter-spacing: -0.5px;
+    }
+
+    .hero-description {
+        margin-top: 15px;
+
+        font-size: 14px;
+    }
+
+
+    /* Audit card */
+
+    .audit-card {
+        padding: 20px;
+
+        border-radius: 14px;
+    }
+
+    .card-title {
+        margin-bottom: 20px;
+    }
+
+    .card-title h3 {
+        font-size: 16px;
+    }
+
+    .url-input-wrapper {
+        flex-direction: column;
+    }
+
+    .url-input-wrapper input,
+    .url-input-wrapper button {
+        width: 100%;
+    }
+
+    .url-input-wrapper button {
+        height: 50px;
+    }
+
+
+    /* Results */
+
+    .results-section {
+        margin-top: 45px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .section-header h2 {
+        font-size: 23px;
+    }
+
+    .secondary-button {
+        width: 100%;
+    }
+
+
+    /* Scores */
+
+    .score-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .score-card {
+        min-height: 125px;
+    }
+
+
+    /* Technical */
+
+    .checks-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Footer */
+
+    .footer-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .brand h1 {
+        font-size: 15px;
+    }
+
+    .stage-badge {
+        display: none;
+    }
+
+    .hero-content h2 {
+        font-size: 27px;
+    }
+
+    .overall-score {
+        font-size: 40px;
+    }
+
+}
